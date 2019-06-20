@@ -62,7 +62,7 @@ moving=imread(fullfile(root_moving,file_moving));
 
 %Calculate transformation matrix using RegisterImages_FRONTIERS (see top
 %comments in RegisterImages_FRONTIERS for details)
-[saved_tform,needSave] = RegisterImages(imadjust(static), imadjust(moving),'ScalingFactor',1/scale_factor);
+[saved_tform,needSave] = RegisterImages_FRONTIERS(imadjust(static), imadjust(moving),'ScalingFactor',1/scale_factor);
 
 %In the event that only 1 image needs to be transformed, it's name will
 %need to be converted to a cell array
