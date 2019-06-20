@@ -1,0 +1,1532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eCog.Proc UserName="mckeet" Company="Princess Margaret Hospital" Copyright="" version="20091027" use-reproducable-poly="1" project-unit="5" engine-version="2.7.0" engine-build="60436" update-topology="0" distance_calculation="CG" resampling_compatibility="1" geoinfo_compatibility="0" ver="1">
+	<ParamValueSetCntnr>
+		<ParamValueSet Name="Rule Set Parameters">
+			<ParamValue name="Rule Set Name" type="string">
+				<DValue value="Unnamed" type="string"></DValue>
+			</ParamValue>
+			<ParamValue name="Rule Set Description" type="string">
+				<DValue value="" type="string"></DValue>
+			</ParamValue>
+			<ParamValue name="Rule Set Author" type="string">
+				<DValue value="mckeet" type="string"></DValue>
+			</ParamValue>
+			<ParamValue name="Rule Set Version" type="string">
+				<DValue value="1." type="string"></DValue>
+			</ParamValue>
+		</ParamValueSet>
+	</ParamValueSetCntnr>
+	<SharedObjects></SharedObjects>
+	<ObjectDependencies>
+		<ImgLayers>
+			<ChnlProxyCntnr>
+				<Layers>
+					<ChnlProxy strName="Hoechst Distance Tissue" flags="12">
+						<Assignment Chnl="-1" MapName="ROIClassification1"></Assignment>
+						<Assignment Chnl="-1" MapName="ROIDetection1"></Assignment>
+						<Assignment Chnl="-1" MapName="cellularAnalysisMap1"></Assignment>
+						<Assignment Chnl="-1" MapName="main"></Assignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+					</ChnlProxy>
+					<ChnlProxy strName="Hoechst Distance Map" flags="12">
+						<Assignment Chnl="-1" MapName="ROIClassification1"></Assignment>
+						<Assignment Chnl="-1" MapName="ROIDetection1"></Assignment>
+						<Assignment Chnl="-1" MapName="cellularAnalysisMap1"></Assignment>
+						<Assignment Chnl="-1" MapName="main"></Assignment>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+					</ChnlProxy>
+				</Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ImgLayers>
+		<ThmLayers>
+			<ChnlProxyCntnr>
+				<Layers></Layers>
+				<Variables></Variables>
+			</ChnlProxyCntnr>
+		</ThmLayers>
+		<MapLvlProxyCntnr>
+			<MapLvlProxies>
+				<MapLvlProxy strName="TissueLevel" bVrbl="0">
+					<Assignment MapLvl="1" MapName="ROIClassification1"></Assignment>
+					<Assignment MapLvl="2" MapName="ROIDetection1"></Assignment>
+					<Assignment MapLvl="1" MapName="cellularAnalysisMap1"></Assignment>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</MapLvlProxy>
+				<MapLvlProxy strName="MergeLevel" bVrbl="0">
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</MapLvlProxy>
+			</MapLvlProxies>
+			<MapLvlVrblValues></MapLvlVrblValues>
+		</MapLvlProxyCntnr>
+		<ProcVrblCntnr></ProcVrblCntnr>
+		<ClssHrchy EvalInvalid="1" MinProb="0.10000000000000001" NNSlope="0.20000000000000001" RdiResamplOptns="3">
+			<MapUnit>
+				<Map MapName="main" Unit="5"></Map>
+				<Map MapName="ROIDetection1" Unit="5"></Map>
+				<Map MapName="ROIClassification1" Unit="5"></Map>
+				<Map MapName="cellularAnalysisMap1" Unit="5"></Map>
+			</MapUnit>
+			<AllClss>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="464">2C08D1A6A0A339DD1930AB4EB495D9FF6810842B2C11FBF3EBDA1D551C703FCA85F1E3C8BE8204C5D01A73F68C17F0E636123D4A18608136D30D3C250F4CAA11CEBF7B7A22C1BA0E1F96986B06489B7AA96A8D7610AE6BF5CA31D7C1A04F37AEA01003782484F72FB3B9EF8A41295BF84CF7FAB059A2C93D16A1BF4B666D66E20ECF6C14A19A7D03D49E2B4BD09CD0A4B114E66CEE9D5B785ED5C081AA791F984A9214E73563600E63F566DE2AEB4C0DEBE146811D098632A54799D258EBCE5322F7246EA4BB811A029636223D41A9EF3AAB71A5CA55EA570450F6FB6B2F04C35983184B1FAE31A74547B493FE5CC5D6AAE5B5CB7255687884A45ADDB0F5222D501CF29405962BDAD4EA33763FA91500BC9901850385E2E4AED046A0F10144C91930365013BE862BD982376613404129</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="478">41D5D344604347DE8E3E6D70C2846D3A80ADA5FC46A65F115D6B58A7A61C0F13FEFE2D2B1D84FD12C2A26D6D4C720BA8E85624F31CF17D8F0FDE8A1C49B8C0BC96C396DE64CAED69D009BDAC53A7028EC6DE8A3EF5F2E4BB86C9D107A4D2CA13E631E745590E0AFCA9AAB7C47EC584A5CF5E4BF86FA2FD1A586FF83070B9E3F46CC6529E2E6A33979BA7B7A32D64DBC03E88A46A62B62AC7D4FDAE702DD140FBDECAB5C48FF76C83C2AC0917C53B875B5EF8FF93E4FAD58FE891984BC0B6B63070A094AA9461EDB6263DE2E6E0A25BE407EA5CAA7C1DC2D866569306B4BD414F546958FEC68CC02B7CC3A4B888C22EB9A9A7D8D5FD373184BA785C3EBEE5EBA58079ED4294307E8E0E9A52410F0242E630CC672DC2BE7B60EA3533065B31324927139A8805C8AA03F5F557388C89B6EB172CD002D99A1C53647E5C97D2CDC5ED</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="496">96D9AD2CA8EB6F09C9A886CD6191BECF0E28F7045070C32E7B0E2F309F7278A81B1214EC829D6139BA7BED4D9C4684720AA1D278CA60727100D27732790259CB22B8347997793106F2E52A45FBB96D1F09BC9E4DE9CEFA83C656541476D7FB89228AD409DEC283B137734E6E7F0917A86281A367AD31CB855E118EADAAA04024DF95ED183E8097EAA5AB684819BC43D09B86BB7CD6AB8FC1D4FF1BECE301EF64289514E67149AF12B0E9A832EC6C0C99067113289B601D8E2BB467034AF418E80F0209AE67F18223F305BFBC4C3394B44DBCFD76F53E37528EE8D8637CAE1EFB3802D5A92BE7C2CB3058971EAA4994FC2987C43EFDFEEDE289978B89261AAB0CB467988C57A16736D6C9D7F6E961E7C299B4E04F612169EFAC17754056926F4D107989F326936BC81253714D5ED8DD0E0549A051EC977D48E531D13F320AA23E</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="459">D16BFFCE07FDF951AC38A95521091DC30773F48F4F4081ED815B3BB86EDCAFBE80660FD7812BAFF08241DF16FCD95334A066B2E0D5D3CD00885F323463CDBAC7FC1893805391C6D19F6F9D145BDA17B6C316FD0FBC20E77658322A5B6218993044B54D5A269EEB0307B231F4A819DDB3739DCC8F4913C6141F2108C249361F395CE47DC98F50442780321F02A34A4EE3DDE5E6931AF6B5999353E91FC80673D8DA4003AB68DE343A3D3B444E82E0BE8829470C3089EDB92F25609D56CE3A2EC059444E8E28AFBF17E92218B0621C32BC1C89D028007D8AC9F7C0AA8AAE7CD44928A061F82018B969132A3198C536B85B10ADD497880A19AB97C94CCCBFEACEEF388DA148E6F20F55FBC7B01F32A1C03D31D32D4D60A1CFD19574C4AE3397DC3C6DB9E7AC781147E20E7A935DC805E3D9</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="486">60BA83F749372B21F986A7B12DCA32453DBA9FB5A64910FD24E03CB02E3A9C874C551DA1FC7C1A14C2CD0D0741DE5DC6CE8A4264B328B66BAB60294B1E410DEE17D1AB49BE63CFDD92A0A0395F26F474C268BDEB3E6F776BCC388D0C6C4F4B72811EF7656F7E09B900170050A8397ABFDCC8D8CA50F6CD54F0AF5F5419FA6EA927EBEDE2735ECEE671E5F1D45B581BC2114BC511B8C7C8DA8FFB6A2E71E22170B22D60D7ACA8313B22DDAD88F6D74A0531A226F9225C10E2413246C258478061FE65093AC10F4ADD0D3A805EF78828BFF1E0B633DE86085BC1117F0DA24A09BCC64035B5EE3BF65B2D2FCEECCA68371FF5B156C3181957EF9B9E0026D782E8CFCF13C2704A05298E419DC4A3080476F763804B0751AE00DE24FEE46F2B0E6ACB43725B78D020F02CD06A979393ADE0D686E1F74DC90A55CEB08C5CF3F44F5E23</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="482">E2EDBF3A50749D4F1C08D351C15D352D3121DDA9D497F743C9D7040EFF8B5663C2F1607794C98698A2FDC922C06ED0926C20A933D1646EA8E01CDC6F80BA78035EDD1637B5037D02AED2D504B3B20FBABC5CD051BC65C57FED6882A8AEB3602C67D254AF66F686CD725264FAE80F4C2907CF60EF04F68B586C41919E68B1981B380FCC3F01D67CDEAC4BB2203C36118FD603B84DE8F82A54688D24D9A239AE30BF1B6E721BCB8A1024A48986DEB5E0E4B7092CC50248050F9F84B8499878065648B82E988FD8DF16EA2E2BC1990904CF72CC3223F4AB02B9EC94AA23C7385EB1F7BCD6BD871A4CF565E6B92E1A08F657374145E797FE1E4201425A2EC8F5783C654C955FDBEA533828C910942E57C202A1A10B0C2424A16232CE037A0CC5FBB0A24B0E62AFF3AC92F8DBC262A65FB6BACC97A72D5CBD107CA9884972BCA8BADA</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="482">B86AF7307DAE89E1B0FB7200A503747B684B34FE96AA2F59329D8106B9403C3A6CA2B5B7F11B3A1EB0F503FD4F82A22C09A847A361E4B458C4DBE58A2D0E8B19D0C2BE6529839C55198453981E9199A81625BB844E130FDB238F4FCCBD16899DA822B39E92C60171194F75E6F97D7B3F3E3D1B2D5A8AD45851A0F8924F2515AB20284FC3F7E30987F0C0F0D6AFDB0DCAC4F5D12FC98646868919608DAACEB71A4538CCF81D96CDE7AD56A618DC9827942C2115FB081B82A7B84B8506047BAA54D65E1F423D06F4C503B1342844BF38A2DB79946A9345B2078728EDC1288836B8093A1B4E28F29DA9485C086ECD519FC1113F8592385A9937491C1D12D291FE7BC062B22271FC7879A81D8D20B6968F7202581FBD7235740D04C4F5BC62ABCCFEBB26CD1D0A67E769CC04CCEB4636CF4CFD9043188648D5D633769CDE66B3E8E2</CipherZip>
+				</EncryptedData>
+				<Clss id="1203" name="Tissue" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481523153" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="189" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1204" name="1-10_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481566923" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="128" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1205" name="10-20_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481566941" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="192" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1206" name="20-30_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481566959" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="0" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1207" name="30-40_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481566977" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="87" B="87"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1208" name="40-50_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481566997" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="160" B="160"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1209" name="50-60_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567038" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="192" B="160"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1210" name="60-70_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567058" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="192" B="87"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1211" name="70-80_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567087" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1212" name="80-90_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567114" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="255" B="233"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1213" name="90-100_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567135" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="210" G="255" B="160"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1214" name="100-120_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567166" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="78" G="255" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1215" name="120-140_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567195" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="128" B="0"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1216" name="140-160_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567234" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="128" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1217" name="160-180_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567268" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="192" B="192"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1218" name="180-200_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567588" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="103" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1219" name="200-250_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567611" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="0" G="0" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1220" name="250-300_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567638" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="66" G="0" B="128"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1221" name="300-400_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567662" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="128" G="0" B="59"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1222" name="400-500_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567688" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="192" G="0" B="192"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1223" name="500-600_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567706" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="87" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1224" name="600-700_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567728" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="160" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1225" name="700-800_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567752" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="233" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1226" name="800-900_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567780" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="160" G="192" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1227" name="900-1000_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567816" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="160" G="255" B="255"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+				<Clss id="1228" name=">1000_H_Dist" flag="0" iMaskID="-1" bUsePrntClr="0" dPrntClssBrghtns="0." termType="0" strUserName="mckeet" tChngTime="1481567940" bShow="0" Trans="0." sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+					<Color R="255" G="251" B="240"></Color>
+					<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+				</Clss>
+			</AllClss>
+			<PropTree version="20100426">
+				<AllProps>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568328" group_id="area.sub.class.prop">
+						<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects EF5 (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="2"></DUnitInfo>
+						<Params>
+							<DValue value="692" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568336" group_id="area.sub.class.prop">
+						<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects Necrosis (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="2"></DUnitInfo>
+						<Params>
+							<DValue value="181" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568350" group_id="area.sub.class.prop">
+						<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects Tumor (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<DUnitInfo Conversion="0" UnitType="1" Dim="2"></DUnitInfo>
+						<Params>
+							<DValue value="347" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481530691" group_id="clssifas.classfy.class.prop">
+						<PropDscrId GUID="CA75D1CD-1354-45c1-A870-8ACD2577E652" InstID="Classified as Tissue"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="1203" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481562990" group_id="clssifas.classfy.class.prop">
+						<PropDscrId GUID="CA75D1CD-1354-45c1-A870-8ACD2577E652" InstID="Classified as EF5"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="692" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481564851" group_id="clssifas.classfy.class.prop">
+						<PropDscrId GUID="CA75D1CD-1354-45c1-A870-8ACD2577E652" InstID="Classified as Hoechst"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="693" type="clssId" name="valClss"></DValue>
+						</Params>
+					</PropDscr>
+					<EncryptedData>
+						<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+						<CipherZip len="369">8A10BC2AAEB190E9CB76C7557EE399223969BA1E83D3567CCE59375F8AC9EF389AA67D7AE7DDEB470B005F8B5DD26B8687F27FBD4CF5B2D843C06AA67D12A1A437D785FB156C6E3ED00DDF346FCA94BFE0E3573B7257F54DF0377AC89F6608BF97C77633A62A0BE30816A684EE9253467CBE93A2D799CB6415B48AB31F532310B5CAC0714158EC170E264544A46E660D97238715074695206BD08F1A4F85047D4CBFA15611C86E44FBC63FA59886F32ABF952AFE6071DB2BBFFBF4E48B61BA96C9799A9593DDD010F833FD0628D324A0AC136A1264FE0D5FBB872EBBCB24C9D3B5280480DD52410F4C07458CE500FB6222F62431B4CAB9876486358A3B4AC2507E6001274F99D98F8710AA2951C81B7B</CipherZip>
+					</EncryptedData>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568290" group_id="relarea.sub.class.prop">
+						<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects Tumor (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="347" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568305" group_id="relarea.sub.class.prop">
+						<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects EF5 (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="692" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="2" strUserName="mckeet" tChngTime="1481568312" group_id="relarea.sub.class.prop">
+						<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects Necrosis (1)"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params>
+							<DValue value="181" type="clssId" name="valClss"></DValue>
+							<DValue value="1" type="int" name="iDist"></DValue>
+						</Params>
+					</PropDscr>
+					<PropDscr Flag="0" strUserName="mckeet" tChngTime="1481561929" group_id="classfy.class.prop">
+						<PropDscrId GUID="7437A3D3-00FD-4315-8993-9EC1165F7794" InstID="Assigned class"></PropDscrId>
+						<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+						<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+						<Params></Params>
+					</PropDscr>
+					<EncryptedData>
+						<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+						<CipherZip len="422">1C9E0544F9177C5B870D71F1B898D36D7331A8BD32D909FA4007B411AE511148F0A136DBB64251971275214AACB80A561192C7164FC2C0C85511E538A8215B3F4C3C813BA5E6EBF69163C71E2D3A8749C7275E02B23C2877CC11CB219EDDDB98AFA62617B4B97BD5C60346C36C7D2E7CBD93F0E1627AA030746B028B61EF4300B577673452B8C875008733DD6553987EA41BB0BDF6453133546297BBA00DAEAC2866B480010FBFBF8D49A5E6C9E3375FE3A6D781D905BC5C0B5FCBB89263E6D201EBBB53E874145D8772142EC79F4CB0F385A544D734DE8F049E91AF2F151F3E5E5B561EE26ED0CF8ED82FB6BF1D95B0E6D83D329024BE8760EE87EC65202295F2EE629DAF61F7C0F7FC16B383E4560BE85BA1B5EB91366425DEE09DE2A4B2CB</CipherZip>
+					</EncryptedData>
+				</AllProps>
+				<UserGroups></UserGroups>
+			</PropTree>
+			<Brightness>
+				<Map MapName="main">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+						<BrghtWght val="1." chnl="6"></BrghtWght>
+						<BrghtWght val="1." chnl="7"></BrghtWght>
+						<BrghtWght val="1." chnl="8"></BrghtWght>
+						<BrghtWght val="1." chnl="9"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+				<Map MapName="ROIDetection1">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+						<BrghtWght val="1." chnl="6"></BrghtWght>
+						<BrghtWght val="1." chnl="7"></BrghtWght>
+						<BrghtWght val="1." chnl="8"></BrghtWght>
+						<BrghtWght val="1." chnl="9"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+				<Map MapName="ROIClassification1">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+						<BrghtWght val="1." chnl="6"></BrghtWght>
+						<BrghtWght val="1." chnl="7"></BrghtWght>
+						<BrghtWght val="1." chnl="8"></BrghtWght>
+						<BrghtWght val="1." chnl="9"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+				<Map MapName="cellularAnalysisMap1">
+					<ChnlWghtBrght>
+						<BrghtWght val="1." chnl="0"></BrghtWght>
+						<BrghtWght val="1." chnl="1"></BrghtWght>
+						<BrghtWght val="1." chnl="2"></BrghtWght>
+						<BrghtWght val="1." chnl="3"></BrghtWght>
+						<BrghtWght val="1." chnl="4"></BrghtWght>
+						<BrghtWght val="1." chnl="5"></BrghtWght>
+						<BrghtWght val="1." chnl="6"></BrghtWght>
+						<BrghtWght val="1." chnl="7"></BrghtWght>
+						<BrghtWght val="1." chnl="8"></BrghtWght>
+						<BrghtWght val="1." chnl="9"></BrghtWght>
+					</ChnlWghtBrght>
+				</Map>
+			</Brightness>
+			<AllVrblClss></AllVrblClss>
+			<AllSubClss>
+				<Clss Id="60" PrfdGrp="60">
+					<SubClss></SubClss>
+					<SubGrp>
+						<Grp Id="210"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="347" PrfdGrp="179">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="179" PrfdGrp="210">
+					<SubClss></SubClss>
+					<SubGrp>
+						<Grp Id="693"></Grp>
+						<Grp Id="692"></Grp>
+						<Grp Id="181"></Grp>
+						<Grp Id="347"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="210" PrfdGrp="60">
+					<SubClss></SubClss>
+					<SubGrp>
+						<Grp Id="179"></Grp>
+					</SubGrp>
+				</Clss>
+				<Clss Id="181" PrfdGrp="179">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="692" PrfdGrp="179">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="693" PrfdGrp="179">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1203" PrfdGrp="1203">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1204" PrfdGrp="1204">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1205" PrfdGrp="1205">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1206" PrfdGrp="1206">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1207" PrfdGrp="1207">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1208" PrfdGrp="1208">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1209" PrfdGrp="1209">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1210" PrfdGrp="1210">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1211" PrfdGrp="1211">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1212" PrfdGrp="1212">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1213" PrfdGrp="1213">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1214" PrfdGrp="1214">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1215" PrfdGrp="1215">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1216" PrfdGrp="1216">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1217" PrfdGrp="1217">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1218" PrfdGrp="1218">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1219" PrfdGrp="1219">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1220" PrfdGrp="1220">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1221" PrfdGrp="1221">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1222" PrfdGrp="1222">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1223" PrfdGrp="1223">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1224" PrfdGrp="1224">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1225" PrfdGrp="1225">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1226" PrfdGrp="1226">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1227" PrfdGrp="1227">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+				<Clss Id="1228" PrfdGrp="1228">
+					<SubClss></SubClss>
+					<SubGrp></SubGrp>
+				</Clss>
+			</AllSubClss>
+			<AllTerm>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="178">EA383FCFD99C2232A76F721A7218B0DE117A537BB76AC62AD3ED4BED7FCC07B445B11BEEBB8895821420FEE9B729DDE1BE1EAA6969AB209DBE94095C1AA62553A9810F76AA7B195F3C5DD0D4D69D60FF3B8B9F66E5885EFC34092F92A30468FB06311DFAAD439F25DA1DCD47AD9CBAE9C88B3120EAEE1ADF40CD5FE890D48AFA8C902A303FF68BC80C94B5F594BC7519</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">73D8F94364A4834C81698E73CCDF12559BDDED51664CA405B3406C2B754287EBF00A2ABF92CD0D5612B957FFFDB6BE6CB1364D9DD193048A0402235FA7B245E4806B648C25D2FD90E6F3D457B2B348CC9D3BF4CAEDAE9E294012BCE7D8A1EB0A1693735502EA4960341C67BBBC2E99FFB1563C125F0F551C9AE619EF65B0FC2B009050A4AD61D4566876D063D5CB0A4A</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">48E9A83181F1DABA64E841239A17FB0A89A828B61856D6B75D066F796E3A7020865C4081844F20B8EC5F65ADEDC79000859531B08ED53377BA32500903C7B2E08DFC6F2D24D5B6D871CFC06AF844CD8011F2B99916E1C2D57E1A5CDA67E6C758857D7F160B116D802F0ED2A1B591AEF4F2A2F2AFCF98102F3D187A672C33C21C041745D71E64E36A48F9A314A0ED7F76</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">53DC9049488316122750269A286E9458A671A024196A5DFA273082EBD111AD7AA68A3F1E67D183EC03ECEAFE06D4E9BCEFA5FC55B50F1CDE3739D4B5AFE8020C5AC85B3E1DEC4DD49994705C3519F0356B2D216CA0D4D34DC010960379B0AC7A578A98545323739CDE89A13DE9C793315B37ACB7C0A8612AA0196C2266863535C86969B187FE076F966B4FDA2D2CB578</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">5A89ABE54D7D06BE423800D68D0A4D4801B873785726B0741037A367FC4FB4C2F597996AA501917D16D356267F4FBDCA42A9C31F9AE7146DE54BFA6231BDA3AE5D691FFADD67E67DB8726A85872034EBA806A3D6D3B6FAA5FAFC68AB4947B35B133C1E3058721E08A415DC566A7D4D451914C3AB6F9BF17B0D64ED1CF663DBFFFB26BE20724FC8D6DD8721D252406135</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">5CA9F9E970461240C19DE3497C3BF618C06C4F5AF9FDB39CA51A3FC25075C31A91C6F397703EA13E6BF20E6C744036C4ACE87CE937667D5A1BB0C10A845A3A75E3E3B9DDFCBB65367CC6448009CF067D9B41F69B96589093B1FA5858CDC4072A8EFCF894390A649F02650ACA1A025445B603C2D24F21F7272D01AFBBBD7E294C0FC64DADAF48046AC7D913B9BD11D671</CipherZip>
+				</EncryptedData>
+				<EncryptedData>
+					<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+					<CipherZip len="179">44AFCDE9370A0EA4AB18D96A49FD45D0857FD59CE6481C5EE29406A0DF925B01A53DA75C92D081FF598D6470C37467E62DB0E347DD566A74E713B92213611EFB4E5EBEF3A6D3BFE0DE434D564CF2EE75EA3EC5DCC50CF0A3031E1B736046BF62814AA125B047131669454CB1A9A66B943E30B5244207B102B03A90311F46A4F0BB12A454DF99A8CA0F4A5A52BDF6486C</CipherZip>
+				</EncryptedData>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1203" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1204" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1205" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1206" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1207" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1208" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1209" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1210" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1211" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1212" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1213" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1214" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1215" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1216" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1217" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1218" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1219" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1220" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1221" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1222" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1223" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1224" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1225" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1226" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1227" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+				<Term TermEvalType="0">
+					<TermBase ClssId="1228" flags="0" sComment="">
+						<Weight>
+							<DValue value="1" type="int"></DValue>
+						</Weight>
+					</TermBase>
+				</Term>
+			</AllTerm>
+		</ClssHrchy>
+		<MapVrblCntnr></MapVrblCntnr>
+		<FtrListVrblCntnr></FtrListVrblCntnr>
+		<CoordVrblCntnr></CoordVrblCntnr>
+		<ROIVrblCntnr></ROIVrblCntnr>
+		<ImgObjListVrblCntnr></ImgObjListVrblCntnr>
+		<ArrayCntnr>
+			<Arrays></Arrays>
+			<ArrayVrbls></ArrayVrbls>
+		</ArrayCntnr>
+		<Smpls>
+			<AllClss>
+				<SmplList ClssId="60"></SmplList>
+				<SmplList ClssId="347"></SmplList>
+				<SmplList ClssId="179"></SmplList>
+				<SmplList ClssId="210"></SmplList>
+				<SmplList ClssId="181"></SmplList>
+				<SmplList ClssId="692"></SmplList>
+				<SmplList ClssId="693"></SmplList>
+				<SmplList ClssId="1203"></SmplList>
+				<SmplList ClssId="1204"></SmplList>
+				<SmplList ClssId="1205"></SmplList>
+				<SmplList ClssId="1206"></SmplList>
+				<SmplList ClssId="1207"></SmplList>
+				<SmplList ClssId="1208"></SmplList>
+				<SmplList ClssId="1209"></SmplList>
+				<SmplList ClssId="1210"></SmplList>
+				<SmplList ClssId="1211"></SmplList>
+				<SmplList ClssId="1212"></SmplList>
+				<SmplList ClssId="1213"></SmplList>
+				<SmplList ClssId="1214"></SmplList>
+				<SmplList ClssId="1215"></SmplList>
+				<SmplList ClssId="1216"></SmplList>
+				<SmplList ClssId="1217"></SmplList>
+				<SmplList ClssId="1218"></SmplList>
+				<SmplList ClssId="1219"></SmplList>
+				<SmplList ClssId="1220"></SmplList>
+				<SmplList ClssId="1221"></SmplList>
+				<SmplList ClssId="1222"></SmplList>
+				<SmplList ClssId="1223"></SmplList>
+				<SmplList ClssId="1224"></SmplList>
+				<SmplList ClssId="1225"></SmplList>
+				<SmplList ClssId="1226"></SmplList>
+				<SmplList ClssId="1227"></SmplList>
+				<SmplList ClssId="1228"></SmplList>
+			</AllClss>
+			<AllProp></AllProp>
+		</Smpls>
+		<plugin-list>
+			<plugin name="Definiens Geometry Algorithms" version="0.1"></plugin>
+			<plugin name="Definiens Filtering Algorithms" version="0.1"></plugin>
+			<plugin name="Definiens Internal Export Process Algorithms" version="0.1"></plugin>
+			<plugin name="Definiens Internal Process Algorithms" version="0.1"></plugin>
+			<plugin name="Definiens Basic Process Algorithms" version="0.1"></plugin>
+		</plugin-list>
+	</ObjectDependencies>
+	<CustProcAlgrList></CustProcAlgrList>
+	<ProcessList>
+		<ProcBase Name="Reset" bLoopChg="0" bExpand="1" bActive="0" bAutoName="0" bSubrtn="0" sComment="">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+				<Params></Params>
+			</Algorithm>
+			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+				<Params>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="From Parent" type="string" name="valMap"></DValue>
+				</Params>
+			</Domain>
+			<SubProc>
+				<ProcBase Name="do" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="on Necrosis_Map : delete map" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="68B14002-A531-4066-8DB8-C7A68AF9E116">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="Necrosis_Map" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="on cellularAnalysisMap1 : delete 'MergeLevel'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="4D72CCF3-EB44-4dcb-B5E1-70CA007D50CE">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="cellularAnalysisMap1" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+			</SubProc>
+		</ProcBase>
+		<ProcBase Name="on cellularAnalysisMap1 at  TissueLevel: copy creating 'MergeLevel' above" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="422F931B-FB82-4853-A773-2A821FE23893">
+				<Params>
+					<DValue type="lvlName" name="valMapLvl">
+						<MapLvlProxy strName="MergeLevel" bVrbl="0">
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+						</MapLvlProxy>
+					</DValue>
+					<DValue value="1" type="bool" name="bUp"></DValue>
+					<DValue value="0" type="int" name="eVariableSet"></DValue>
+					<DValue value="0." type="double" name="pFeatureList"></DValue>
+				</Params>
+			</Algorithm>
+			<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+				<Params>
+					<DValue type="lvlName" name="valMapLvl">
+						<MapLvlProxy strName="TissueLevel" bVrbl="0">
+							<Assignment MapLvl="1" MapName="ROIClassification1"></Assignment>
+							<Assignment MapLvl="2" MapName="ROIDetection1"></Assignment>
+							<Assignment MapLvl="1" MapName="cellularAnalysisMap1"></Assignment>
+							<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+							<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+						</MapLvlProxy>
+					</DValue>
+					<DValue type="vector" name="mClssFltr">
+						<Values>
+							<DValue value="Disabled" type="string" indx="0"></DValue>
+						</Values>
+					</DValue>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="cellularAnalysisMap1" type="string" name="valMap"></DValue>
+					<DValue value="From Parent" type="string" name="valROI"></DValue>
+					<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+					<DValue value="4" type="int" name="iVersion"></DValue>
+					<DValue value="-1" type="int" name="iOldLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+					<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+				</Params>
+			</Domain>
+			<SubProc></SubProc>
+		</ProcBase>
+		<ProcBase Name="on cellularAnalysisMap1" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+			<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+			<vrblValMaxCycle>
+				<DValue value="1." type="double"></DValue>
+			</vrblValMaxCycle>
+			<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+				<Params></Params>
+			</Algorithm>
+			<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+				<Params>
+					<DValue type="threshold" name="valThrsh"></DValue>
+					<DValue type="threshold" name="valThrsh2"></DValue>
+					<DValue value="cellularAnalysisMap1" type="string" name="valMap"></DValue>
+				</Params>
+			</Domain>
+			<SubProc>
+				<ProcBase Name="EF5, Necrosis, Tumor at  MergeLevel: convert image objects -> Connected 2D" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="6EC1674C-B457-4af6-B95B-0AC62BD28A6B">
+						<Params>
+							<DValue value="0" type="int" name="eObjType"></DValue>
+							<DValue value="1" type="bool" name="bFusion"></DValue>
+							<DValue value="0" type="bool" name="bFusionUp"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="692" type="clssId" indx="0"></DValue>
+									<DValue value="181" type="clssId" indx="1"></DValue>
+									<DValue value="347" type="clssId" indx="2"></DValue>
+									<DValue value="User defined" type="string" indx="3"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="EF5, Necrosis, Tumor at  MergeLevel: Tissue *" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="80BA6991-0BF5-4e95-BB7F-4F743CED8524">
+						<Params>
+							<DValue type="vector" name="lActvClss">
+								<Values>
+									<DValue value="1203" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue value="1" type="bool" name="bErase"></DValue>
+							<DValue value="1" type="bool" name="bUseClssDscr"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="692" type="clssId" indx="0"></DValue>
+									<DValue value="181" type="clssId" indx="1"></DValue>
+									<DValue value="347" type="clssId" indx="2"></DValue>
+									<DValue value="User defined" type="string" indx="3"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Tissue at  MergeLevel: merge region" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="2328636B-BAD3-4f5d-B5AA-FC209A0BFB65">
+						<Params>
+							<DValue value="1" type="bool" name="bFsnUp"></DValue>
+							<DValue value="0" type="bool" name="bUseThmLayer"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="1203" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Hoechst at  MergeLevel: direct distance to border (Hoechst Distance Map)" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="5D0DC22A-F8A1-44F1-8BED-54A3AB8C5F84">
+						<Params>
+							<DValue value="1" type="int" name="valDistType"></DValue>
+							<DValue value="100" type="int" name="maxPointSquare"></DValue>
+							<DValue type="img_chnl" value="Hoechst Distance Map" scope="" name="valTargetChnl"></DValue>
+							<DValue value="1" type="bool" name="bIsTargetVsbl"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="693" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Tissue at  MergeLevel: layer arithmetics (val Hoechst Distance Map * (1 - Classified as Hoechst), layer Hoechst Distance Map range [0,1000000000] to layer  [int 32 bit])" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="7CE4098E-BB8E-4035-BF37-1AFECA6998F4">
+						<Params>
+							<DValue type="img_chnl" value="Hoechst Distance Map" scope="" name="pSourceChnl"></DValue>
+							<DValue value="0." type="double" name="inMinValue"></DValue>
+							<DValue value="1000000000." type="double" name="inMaxValue"></DValue>
+							<DValue value="Hoechst Distance Map * (1 - Classified as Hoechst)" type="string" name="outValue"></DValue>
+							<DValue type="img_chnl" value="Hoechst Distance Tissue" scope="" name="layerName"></DValue>
+							<DValue value="0" type="bool" name="bUseVrblName"></DValue>
+							<DValue value="-1" type="procVarId" name="vrblName"></DValue>
+							<DValue value="1" type="bool" name="bIsTargetVsbl"></DValue>
+							<DValue value="none" type="string" name="valROI"></DValue>
+							<DValue value="8" type="int" name="eDataType"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="1203" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Tissue at  MergeLevel: unclassified &lt;= 1 &lt; 1-10_H_Dist &lt;= 10 &lt; 10-20_H_Dist &lt;= 20 &lt; 20-30_H_Dist &lt;= 30 &lt; 30-40_H_Dist &lt;= 40 &lt; 40-50_H_Dist &lt;= 50 &lt; 50-60_H_Dist &lt;= 60 &lt; 60-70_H_Dist &lt;= 70 &lt; 70-80_H_Dist &lt;= 80 &lt; 80-90_H_Dist &lt;= 90 &lt; 90-100_H_Dist &lt;= 100 &lt; 100-120_H_Dist &lt;= 120 &lt; 120-140_H_Dist &lt;= 140 &lt; 140-160_H_Dist &lt;= 160 &lt; 160-180_H_Dist &lt;= 180 &lt; Tissue on Hoechst Distance Tissue" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="1AB8761A-C1D1-47a7-B608-A3A74C15DAAB">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl"></DValue>
+							<DValue value="1" type="bool" name="bDoOverwrite"></DValue>
+							<DValue type="img_chnl" value="Hoechst Distance Tissue" scope="" name="valChnl_1"></DValue>
+							<DValue value="1" type="bool" name="bConnectedOnly"></DValue>
+							<DValue value="0" type="bool" name="bCompatibV100"></DValue>
+							<DValue value="1" type="int" name="vrblMinObjSize"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss1"></DValue>
+							<DValue value="1." type="double" name="valThrs1"></DValue>
+							<DValue value="1204" type="clssId" name="dmiClss2"></DValue>
+							<DValue value="10." type="double" name="valThrs2"></DValue>
+							<DValue value="1205" type="clssId" name="dmiClss3"></DValue>
+							<DValue value="20." type="double" name="valThrs3"></DValue>
+							<DValue value="1206" type="clssId" name="dmiClss4"></DValue>
+							<DValue value="30." type="double" name="valThrs4"></DValue>
+							<DValue value="1207" type="clssId" name="dmiClss5"></DValue>
+							<DValue value="40." type="double" name="valThrs5"></DValue>
+							<DValue value="1208" type="clssId" name="dmiClss6"></DValue>
+							<DValue value="50." type="double" name="valThrs6"></DValue>
+							<DValue value="1209" type="clssId" name="dmiClss7"></DValue>
+							<DValue value="60." type="double" name="valThrs7"></DValue>
+							<DValue value="1210" type="clssId" name="dmiClss8"></DValue>
+							<DValue value="70." type="double" name="valThrs8"></DValue>
+							<DValue value="1211" type="clssId" name="dmiClss9"></DValue>
+							<DValue value="80." type="double" name="valThrs9"></DValue>
+							<DValue value="1212" type="clssId" name="dmiClss10"></DValue>
+							<DValue value="90." type="double" name="valThrs10"></DValue>
+							<DValue value="1213" type="clssId" name="dmiClss11"></DValue>
+							<DValue value="100." type="double" name="valThrs11"></DValue>
+							<DValue value="1214" type="clssId" name="dmiClss12"></DValue>
+							<DValue value="120." type="double" name="valThrs12"></DValue>
+							<DValue value="1215" type="clssId" name="dmiClss13"></DValue>
+							<DValue value="140." type="double" name="valThrs13"></DValue>
+							<DValue value="1216" type="clssId" name="dmiClss14"></DValue>
+							<DValue value="160." type="double" name="valThrs14"></DValue>
+							<DValue value="1217" type="clssId" name="dmiClss15"></DValue>
+							<DValue value="180." type="double" name="valThrs15"></DValue>
+							<DValue value="1203" type="clssId" name="dmiClss16"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="1203" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Tissue at  MergeLevel: unclassified &lt;= 180 &lt; 180-200_H_Dist &lt;= 200 &lt; 200-250_H_Dist &lt;= 250 &lt; 250-300_H_Dist &lt;= 300 &lt; 300-400_H_Dist &lt;= 400 &lt; 400-500_H_Dist &lt;= 500 &lt; 500-600_H_Dist &lt;= 600 &lt; 600-700_H_Dist &lt;= 700 &lt; 700-800_H_Dist &lt;= 800 &lt; 800-900_H_Dist &lt;= 900 &lt; 900-1000_H_Dist &lt;= 1000 &lt; >1000_H_Dist on Hoechst Distance Tissue" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="1AB8761A-C1D1-47a7-B608-A3A74C15DAAB">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl"></DValue>
+							<DValue value="1" type="bool" name="bDoOverwrite"></DValue>
+							<DValue type="img_chnl" value="Hoechst Distance Tissue" scope="" name="valChnl_1"></DValue>
+							<DValue value="1" type="bool" name="bConnectedOnly"></DValue>
+							<DValue value="0" type="bool" name="bCompatibV100"></DValue>
+							<DValue value="1" type="int" name="vrblMinObjSize"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss1"></DValue>
+							<DValue value="180." type="double" name="valThrs1"></DValue>
+							<DValue value="1218" type="clssId" name="dmiClss2"></DValue>
+							<DValue value="200." type="double" name="valThrs2"></DValue>
+							<DValue value="1219" type="clssId" name="dmiClss3"></DValue>
+							<DValue value="250." type="double" name="valThrs3"></DValue>
+							<DValue value="1220" type="clssId" name="dmiClss4"></DValue>
+							<DValue value="300." type="double" name="valThrs4"></DValue>
+							<DValue value="1221" type="clssId" name="dmiClss5"></DValue>
+							<DValue value="400." type="double" name="valThrs5"></DValue>
+							<DValue value="1222" type="clssId" name="dmiClss6"></DValue>
+							<DValue value="500." type="double" name="valThrs6"></DValue>
+							<DValue value="1223" type="clssId" name="dmiClss7"></DValue>
+							<DValue value="600." type="double" name="valThrs7"></DValue>
+							<DValue value="1224" type="clssId" name="dmiClss8"></DValue>
+							<DValue value="700." type="double" name="valThrs8"></DValue>
+							<DValue value="1225" type="clssId" name="dmiClss9"></DValue>
+							<DValue value="800." type="double" name="valThrs9"></DValue>
+							<DValue value="1226" type="clssId" name="dmiClss10"></DValue>
+							<DValue value="900." type="double" name="valThrs10"></DValue>
+							<DValue value="1227" type="clssId" name="dmiClss11"></DValue>
+							<DValue value="1000." type="double" name="valThrs11"></DValue>
+							<DValue value="1228" type="clssId" name="dmiClss12"></DValue>
+							<DValue value="-1" type="procVarId" name="valThrs12"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss13"></DValue>
+							<DValue value="-1" type="procVarId" name="valThrs13"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss14"></DValue>
+							<DValue value="-1" type="procVarId" name="valThrs14"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss15"></DValue>
+							<DValue value="-1" type="procVarId" name="valThrs15"></DValue>
+							<DValue value="-1" type="clssId" name="dmiClss16"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="1203" type="clssId" indx="0"></DValue>
+									<DValue value="User defined" type="string" indx="1"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="1-10_H_Dist, 10-20_H_Dist, 20-30_H_Dist, 30-40_H_Dist, 40-50_H_Dist, 50-60_H_Dist, 60-70_H_Dist, 70-80_H_Dist, 80-90_H_Dist, 90-100_H_Dist, 100-120_H_Dist, 120-140_H_Dist, 140-160_H_Dist, 160-180_H_Dist, 180-200_H_Dist, 200-250_H_Dist, 250-300_H_Dist, 300-400_H_Dist, 400-500_H_Dist, 500-600_H_Dist, 600-700_H_Dist, 700-800_H_Dist, 800-900_H_Dist, 900-1000_H_Dist at  MergeLevel: export object statistics" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="2BB99370-74DE-4644-B0BB-2266DD301824">
+						<Params>
+							<DValue value="0" type="int" name="eExportMode"></DValue>
+							<DValue value="Distance_Bins" type="string" name="strExportItem"></DValue>
+							<DValue value="-1" type="procVarId" name="vrblExportItem"></DValue>
+							<DValue value="0" type="bool" name="bIsCustomPath"></DValue>
+							<DValue value="{:Workspc.OutputRoot}\results\{:Item.Name}\{:Project.Name}.v{:Project.Ver}.{:Ext}" type="string" name="strExportPath"></DValue>
+							<DValue value="0" type="bool" name="bExportSeries"></DValue>
+							<DValue value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEV4cG9ydEluZm8gU2luZ2xlRmlsZVBlcldrc3A9IjAiIFNpbmdsZUZpbGVQZXJJdGVtPSIxIiBFeHBvcnRJdGVtPSJEaXN0YW5jZV9CaW5zIiBFeHBvcnRUeXBlPSJUYWJsZSIgRHJpdmVySUQ9IkNTViI+PC9FeHBvcnRJbmZvPgA=" type="encoded_string_base64" name="strExportItemInfo"></DValue>
+							<DValue type="vector" name="valPropDscrs">
+								<Values>
+									<DValue type="propDscrId" indx="0">
+									<PropDscrId GUID="7437A3D3-00FD-4315-8993-9EC1165F7794" InstID="Assigned class"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="1">
+									<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects EF5 (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="2">
+									<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects Necrosis (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="3">
+									<PropDscrId GUID="F698C780-1F14-48e4-9066-48EF7BC5F350" InstID="Area of sub objects Tumor (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="4">
+									<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects EF5 (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="5">
+									<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects Necrosis (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="6">
+									<PropDscrId GUID="91235534-FCFD-4743-B4FC-DCDECBCF071C" InstID="Rel. area of sub objects Tumor (1)"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="7">
+									<PropDscrId GUID="03E04ED0-94DD-45ee-801E-14D70E6E2417" InstID="Area"></PropDscrId>
+									</DValue>
+									<DValue type="propDscrId" indx="8">
+									<PropDscrId GUID="AF0D7167-ADE8-4240-AAA4-AC2C188E9AF5" InstID="Number of pixels"></PropDscrId>
+									</DValue>
+								</Values>
+							</DValue>
+							<DValue value="CSV" type="string" name="sDrvrID"></DValue>
+							<DValue value="{:Workspc.OutputRoot}\DesktopExports" type="string" name="strDesktopDir"></DValue>
+							<DValue value="-1" type="procVarId" name="valFileNameSuffix"></DValue>
+							<DValue value="0" type="bool" name="bMakeReport"></DValue>
+							<DValue value="0" type="int" name="iReportMode"></DValue>
+							<DValue value="0" type="bool" name="bRemAuxCols"></DValue>
+							<DValue value="0" type="int" name="iColSplit1"></DValue>
+							<DValue value="0" type="int" name="iColSplit2"></DValue>
+							<DValue value="0" type="int" name="iColSplit3"></DValue>
+						</Params>
+					</Algorithm>
+					<Domain guid="CED621BD-F4D1-4ffa-A2F6-DB2BB1913E8C">
+						<Params>
+							<DValue type="lvlName" name="valMapLvl">
+								<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+								</MapLvlProxy>
+							</DValue>
+							<DValue type="vector" name="mClssFltr">
+								<Values>
+									<DValue value="1204" type="clssId" indx="0"></DValue>
+									<DValue value="1205" type="clssId" indx="1"></DValue>
+									<DValue value="1206" type="clssId" indx="2"></DValue>
+									<DValue value="1207" type="clssId" indx="3"></DValue>
+									<DValue value="1208" type="clssId" indx="4"></DValue>
+									<DValue value="1209" type="clssId" indx="5"></DValue>
+									<DValue value="1210" type="clssId" indx="6"></DValue>
+									<DValue value="1211" type="clssId" indx="7"></DValue>
+									<DValue value="1212" type="clssId" indx="8"></DValue>
+									<DValue value="1213" type="clssId" indx="9"></DValue>
+									<DValue value="1214" type="clssId" indx="10"></DValue>
+									<DValue value="1215" type="clssId" indx="11"></DValue>
+									<DValue value="1216" type="clssId" indx="12"></DValue>
+									<DValue value="1217" type="clssId" indx="13"></DValue>
+									<DValue value="1218" type="clssId" indx="14"></DValue>
+									<DValue value="1219" type="clssId" indx="15"></DValue>
+									<DValue value="1220" type="clssId" indx="16"></DValue>
+									<DValue value="1221" type="clssId" indx="17"></DValue>
+									<DValue value="1222" type="clssId" indx="18"></DValue>
+									<DValue value="1223" type="clssId" indx="19"></DValue>
+									<DValue value="1224" type="clssId" indx="20"></DValue>
+									<DValue value="1225" type="clssId" indx="21"></DValue>
+									<DValue value="1226" type="clssId" indx="22"></DValue>
+									<DValue value="1227" type="clssId" indx="23"></DValue>
+									<DValue value="User defined" type="string" indx="24"></DValue>
+								</Values>
+							</DValue>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+							<DValue value="From Parent" type="string" name="valROI"></DValue>
+							<DValue value="0" type="int" name="iNumMaxObj"></DValue>
+							<DValue value="4" type="int" name="iVersion"></DValue>
+							<DValue value="-1" type="int" name="iOldLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplLvl"></DValue>
+							<DValue value="0" type="int" name="iOldDsplNumLvl"></DValue>
+						</Params>
+					</Domain>
+					<SubProc></SubProc>
+				</ProcBase>
+				<ProcBase Name="Cleanup" bLoopChg="0" bExpand="1" bActive="1" bAutoName="0" bSubrtn="0" sComment="">
+					<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+					<vrblValMaxCycle>
+						<DValue value="1." type="double"></DValue>
+					</vrblValMaxCycle>
+					<Algorithm guid="A8BA5775-CC39-4194-9A6A-A64872EE1F81">
+						<Params></Params>
+					</Algorithm>
+					<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+						<Params>
+							<DValue type="threshold" name="valThrsh"></DValue>
+							<DValue type="threshold" name="valThrsh2"></DValue>
+							<DValue value="From Parent" type="string" name="valMap"></DValue>
+						</Params>
+					</Domain>
+					<SubProc>
+						<ProcBase Name="delete 'MergeLevel'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="4D72CCF3-EB44-4dcb-B5E1-70CA007D50CE">
+								<Params>
+									<DValue type="lvlName" name="valMapLvl">
+									<MapLvlProxy strName="MergeLevel" bVrbl="0">
+									<Scope GUID="00000000-0000-0000-0000-000000000000"></Scope>
+									<SharedInfo bShared="0" strInstGUID=""></SharedInfo>
+									</MapLvlProxy>
+									</DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="delete image layer 'Hoechst Distance Map'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="75BA92AD-A368-453a-A70F-D9048C6C1CC1">
+								<Params>
+									<DValue value="0" type="int" name="eType"></DValue>
+									<DValue type="img_chnl" value="Hoechst Distance Map" scope="" name="valChnl"></DValue>
+									<DValue type="img_chnl" value="Hoechst Distance Map" scope="" name="valThmChnl"></DValue>
+									<DValue value="0" type="bool" name="bUnassignOnly"></DValue>
+									<DValue value="0" type="bool" name="bIgnoreAlias"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+						<ProcBase Name="delete image layer 'Hoechst Distance Tissue'" bLoopChg="0" bExpand="1" bActive="1" bAutoName="1" bSubrtn="0" sComment="">
+							<LcnsInfo sLcnsId="" sPwd=""></LcnsInfo>
+							<vrblValMaxCycle>
+								<DValue value="1." type="double"></DValue>
+							</vrblValMaxCycle>
+							<Algorithm guid="75BA92AD-A368-453a-A70F-D9048C6C1CC1">
+								<Params>
+									<DValue value="0" type="int" name="eType"></DValue>
+									<DValue type="img_chnl" value="Hoechst Distance Tissue" scope="" name="valChnl"></DValue>
+									<DValue type="img_chnl" value="Hoechst Distance Tissue" scope="" name="valThmChnl"></DValue>
+									<DValue value="0" type="bool" name="bUnassignOnly"></DValue>
+									<DValue value="0" type="bool" name="bIgnoreAlias"></DValue>
+								</Params>
+							</Algorithm>
+							<Domain guid="CC9F2C30-4DB0-4ef2-B864-63560D1D6BF3">
+								<Params>
+									<DValue type="threshold" name="valThrsh"></DValue>
+									<DValue type="threshold" name="valThrsh2"></DValue>
+									<DValue value="From Parent" type="string" name="valMap"></DValue>
+								</Params>
+							</Domain>
+							<SubProc></SubProc>
+						</ProcBase>
+					</SubProc>
+				</ProcBase>
+			</SubProc>
+		</ProcBase>
+	</ProcessList>
+	<ExportedItems>
+		<item name="Distance_Bins" type="Table" driver="CSV" ext="csv" path="{:Workspc.OutputRoot}\results\{:Item.Name}\{:Project.Name}.v{:Project.Ver}.{:Ext}"></item>
+	</ExportedItems>
+	<EncryptedData>
+		<CipherData>28F38A5E9005B9B4A7B53D7ECF8857E5</CipherData>
+		<CipherZip len="86">78A982BAD5281C40E66D533821130D74FEF23895A2BF54DEE9BF9F34A3136072835573B0FA81ED71AA177EB33B71FCC96D1F2B5858CD17A3AA554BBB92E76E2BBE511063BE24A3D56A15BE543AB05B2F7C48FAC77B44BEFAA18A166E24AF02E5</CipherZip>
+	</EncryptedData>
+</eCog.Proc>
